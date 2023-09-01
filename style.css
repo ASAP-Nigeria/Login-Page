@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    background: linear-gradient(0deg, rgba(255,255,255,0.85) 40%, rgba(255,255,255,0.85) 50%), url(images/banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(212,79,40,.9) 10%, rgba(35,78,74, 1) 40%);
+    width: 30%;
+    height: 80vh;
+    color: #fff;
+    padding: 5rem 3rem;
+    border-radius: 15px;
+}
+.card-text h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: .8rem 0;
+}
+.text, .password{
+    position: relative;
+}
+input[type=text], input[type=password]{
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: 1px solid #808080;
+}
+input[type=text]:focus, input[type=password]:focus{
+    color: #fff;
+}
+.text i{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    font-size: 1rem;
+}
+.password i{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    font-size: 1rem;
+}
+::placeholder{
+    font-size: 1.1rem;
+    color: #fff;
+}
+.password{
+    padding-top: 2rem;
+}
+form{
+    padding-top: 2rem;
+    position: relative;
+    margin-right: .3rem;
+}
+.label{
+    font-size: 1rem;
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.card-btn button{
+    border: none;
+    background: #fff;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    color: #234E4A;
+    cursor: pointer;
+}
+.card-btn button:hover{
+    background: linear-gradient(90deg, rgba(212,79,40,.9) 10%, rgba(35,78,74, 1) 40%);
+    color: #fff;
+    transition: all .3s;
+}
+.card-text h5{
+    text-align: center;
+    padding-top: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        height: 130vh;
+    }
+    .card{
+        width: 80%;
+        padding: 5rem 5rem;
+    }
+    .card-text h3{
+        font-size: .8rem;
+    }
+    .card-image img{
+        width: 8rem;
+    }
+    .inputs{
+        margin: 0 4rem;
+    }
+    input[type=text], input[type=password]{
+     max-width: 15rem;
+    }
+    ::placeholder{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    body{
+        width: 100%;
+        height: 140vh;
+    }
+    .card{
+        width: 90%;
+    }
+    .card-text h3{
+        font-size: 1rem;
+    }
+    .card-image img{
+        width: 10rem;
+    }
+    input[type=text], input[type=password]{
+        width: 20rem;
+        font-size: 1rem;
+    }
+    ::placeholder{
+        font-size: .8rem;
+    }
+}
